@@ -1,0 +1,20 @@
+# Finish Line Home Repair — robots.txt
+# Allow all reputable crawlers, including AI/answer engines.
+User-agent: *
+Allow: /
+
+# Explicitly welcome AI crawlers (GEO / AI search visibility)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://dealerplateguy.github.io/finish-line-home-repair/sitemap.xml
