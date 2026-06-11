@@ -98,9 +98,9 @@ section { padding: 84px 0; }
   position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.96);
   backdrop-filter: saturate(180%) blur(10px); border-bottom: 1px solid var(--line);
 }
-.nav { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.nav { display: flex; align-items: center; justify-content: space-between; height: 100px; }
 .nav-logo { display: flex; align-items: center; gap: 12px; }
-.nav-logo img { height: 52px; width: auto; }
+.nav-logo img { height: 78px; width: auto; }
 .nav-logo .brand-text { display: none; }
 .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
 .nav-links a {
@@ -273,10 +273,12 @@ details[open] .faq-q .chev { transform: rotate(45deg); }
 }
 @media (max-width: 760px) {
   section { padding: 60px 0; }
+  .nav { height: 84px; }
+  .nav-logo img { height: 60px; }
   .nav-links, .nav-phone, .nav-cta { display: none; }
   .nav-toggle { display: block; }
   .site-header.open .nav-links {
-    display: flex; position: absolute; top: 76px; left: 0; right: 0; flex-direction: column;
+    display: flex; position: absolute; top: 84px; left: 0; right: 0; flex-direction: column;
     background: var(--white); padding: 18px 24px; gap: 4px; border-bottom: 1px solid var(--line); box-shadow: var(--shadow);
   }
   .site-header.open .nav-links a { padding: 13px 0; width: 100%; border-bottom: 1px solid var(--line); }
