@@ -2,7 +2,10 @@
 # Same deploy pattern as the wreckedleads marketing site, separate Worker.
 # Deploy:  cd production && wrangler deploy
 name = "finish-line-home-repair"
-account_id = "91168bd4f632bb588a3da05333193eaa"  # CRC Website (same account as wreckedleads)
+# dealerplateguy@gmail.com's account — same one hosting the wreckedleads marketing
+# site (NOT the CRC Website account). Deploy with the CRC env token excluded:
+#   env -u CLOUDFLARE_API_TOKEN wrangler deploy
+account_id = "2e2c59a11be87863cc1f65fd11c27905"
 compatibility_date = "2026-06-01"
 
 [assets]
