@@ -1,0 +1,10 @@
+# Finish Line Home Repair — production site (Cloudflare Worker, static assets)
+# Same deploy pattern as the wreckedleads marketing site, separate Worker.
+# Deploy:  cd production && wrangler deploy
+name = "finish-line-home-repair"
+account_id = "91168bd4f632bb588a3da05333193eaa"  # CRC Website (same account as wreckedleads)
+compatibility_date = "2026-06-01"
+
+[assets]
+directory = "./public"
+not_found_handling = "404-page"
