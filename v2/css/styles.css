@@ -32,7 +32,9 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; scroll-padding-top: 164px; -webkit-text-size-adjust: 100%; }
+/* Less than header height on purpose: sections carry 96px internal padding,
+   so this lands the visible content ~26px below the sticky header. */
+html { scroll-behavior: smooth; scroll-padding-top: 51px; -webkit-text-size-adjust: 100%; }
 body {
   font-family: var(--font-body); color: var(--ink); background: var(--bg);
   line-height: 1.65; font-size: 17px; overflow-x: hidden;
@@ -226,7 +228,7 @@ section { padding: 96px 0; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
 @media (max-width: 720px){
-  html { scroll-padding-top: 120px; }
+  html { scroll-padding-top: 45px; }
   section { padding: 66px 0; }
   .nav { height: 88px; }
   .nav-logo img { height: 64px; }

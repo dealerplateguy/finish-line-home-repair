@@ -29,7 +29,10 @@
 }
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:164px;-webkit-text-size-adjust:100%}
+/* scroll-padding deliberately LESS than the header height: sections have
+   110px internal top padding, so landing the section edge 85px under the
+   header puts the visible CONTENT ~24px below it — tight, no dead space. */
+html{scroll-behavior:smooth;scroll-padding-top:34px;-webkit-text-size-adjust:100%}
 body{font-family:var(--font-body);color:var(--ink);background:var(--paper);font-size:16.5px;line-height:1.65;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:var(--ink);text-decoration:none}
@@ -194,7 +197,7 @@ section{padding:110px 0}
   .realtor-grid{grid-template-columns:1fr;gap:40px}
 }
 @media (max-width:720px){
-  html{scroll-padding-top:116px}
+  html{scroll-padding-top:40px} /* mobile: 64px section padding - 83px header + ~21px gap */
   body{font-size:16px}
   section{padding:64px 0}
   .nav{height:82px}
