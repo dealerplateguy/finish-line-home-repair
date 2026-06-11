@@ -134,7 +134,7 @@ section{padding:110px 0}
 /* ---------- Realtor band ---------- */
 .realtor{background:var(--navy-deep);color:#fff}
 .realtor .eyebrow{color:var(--gold)}
-.realtor h2{color:#fff;max-width:16ch}
+.realtor h2{color:#fff}
 .realtor-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
 .realtor p.lead-line{color:rgba(255,255,255,.78);font-size:1.1rem;margin:20px 0 30px;max-width:46ch}
 .r-list{list-style:none;display:grid;gap:22px}
