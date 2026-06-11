@@ -36,7 +36,7 @@
 
 /* ---------- Reset / base ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; scroll-padding-top: 124px; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; scroll-padding-top: 144px; -webkit-text-size-adjust: 100%; }
 body {
   font-family: var(--font-body);
   color: var(--ink);
@@ -272,7 +272,7 @@ details[open] .faq-q .chev { transform: rotate(45deg); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
 @media (max-width: 760px) {
-  html { scroll-padding-top: 100px; }
+  html { scroll-padding-top: 116px; }
   section { padding: 60px 0; }
   .nav { height: 84px; }
   .nav-logo img { height: 60px; }
