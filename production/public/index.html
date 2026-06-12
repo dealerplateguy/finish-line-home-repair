@@ -214,18 +214,23 @@
         <h2>Tell us what needs fixing.</h2>
         <p class="sub" style="margin:14px auto 0;">Four quick fields. We'll come back with a clear, itemized quote — fast.</p>
 
-        <!-- Formspree: replace YOUR_FORM_ID (see README) -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
-          <input type="hidden" name="_subject" value="New quote request — Finish Line Home Repair (V3)" />
-          <input type="hidden" name="_next" value="thank-you.html" />
-          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+        <!-- FormSubmit (formsubmit.co): no account needed. Submissions email to
+             the address in the action URL after a one-time activation click.
+             Reply-To is taken from the visitor's "email" field automatically.
+             Attachments supported free up to 10MB total. -->
+        <form action="https://formsubmit.co/darthur@finishlinehomerepair.com" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="New quote request — finishlinehomerepair.com" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://finishlinehomerepair.com/thank-you.html" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="f2">
             <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required autocomplete="name" /></div>
             <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required autocomplete="tel" /></div>
           </div>
           <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email" /></div>
           <div class="field"><label for="desc">What needs fixing?</label><textarea id="desc" name="repair_description" required placeholder="A few details — and any closing date we should plan around."></textarea></div>
-          <div class="field"><label for="report">Inspection report <span class="opt">(optional — fastest path to an itemized quote)</span></label><input id="report" name="inspection_report" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" /></div>
+          <div class="field"><label for="report">Inspection report <span class="opt">(optional, up to 10MB — fastest path to an itemized quote)</span></label><input id="report" name="inspection_report" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" /></div>
           <button type="submit" class="btn btn-ink">Request my free quote</button>
         </form>
         <p class="alt">Prefer to talk? <a href="tel:+17652023621">Call (765) 202-3621</a> — you'll get the owner, not a call center.</p>

@@ -219,11 +219,14 @@
         <h2>Tell us what needs fixing.</h2>
         <p class="sub" style="margin:14px auto 0;">Four quick fields. We'll come back with a clear, itemized quote — fast.</p>
 
-        <!-- Formspree: replace YOUR_FORM_ID (see README) -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
-          <input type="hidden" name="_subject" value="New quote request — Finish Line Home Repair (V3)" />
-          <input type="hidden" name="_next" value="../thank-you.html" />
-          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+        <!-- FormSubmit (formsubmit.co) — same wiring as production; no account
+             needed, delivers to the address in the action URL after activation. -->
+        <form action="https://formsubmit.co/darthur@finishlinehomerepair.com" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="New quote request — finishlinehomerepair.com" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://finishlinehomerepair.com/thank-you.html" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="f2">
             <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required autocomplete="name" /></div>
             <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required autocomplete="tel" /></div>
