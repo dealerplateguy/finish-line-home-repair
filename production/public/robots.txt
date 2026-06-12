@@ -1,4 +1,4 @@
-# Finish Line Home Repair — robots.txt
+# Finish Line Home Repair robots.txt
 User-agent: *
 Allow: /
 
