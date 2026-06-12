@@ -7,6 +7,15 @@ name = "finish-line-home-repair"
 #   env -u CLOUDFLARE_API_TOKEN wrangler deploy
 account_id = "2e2c59a11be87863cc1f65fd11c27905"
 compatibility_date = "2026-06-01"
+workers_dev = true  # keep the workers.dev URL alive alongside the custom domain
+
+# Custom domains (zone: finishlinehomerepair.com, nameservers moved 2026-06-12).
+# RE-ENABLE after deleting the imported Squarespace DNS records in the zone
+# (apex A records + www CNAME) — attach fails with code 100117 while they exist.
+# routes = [
+#   { pattern = "finishlinehomerepair.com", custom_domain = true },
+#   { pattern = "www.finishlinehomerepair.com", custom_domain = true }
+# ]
 
 [assets]
 directory = "./public"
