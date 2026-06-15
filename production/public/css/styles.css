@@ -136,12 +136,11 @@ section{padding:110px 0}
 .job-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(186px,1fr));gap:16px}
 .job{margin:0}
 .job .ph{border-radius:var(--r);overflow:hidden;background:var(--paper-dim)}
-.job .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;transition:transform .5s var(--ease)}
+.job .ph img{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;object-position:center top;display:block;transition:transform .5s var(--ease)}
 .job:hover .ph img{transform:scale(1.045)}
 .job figcaption{font-family:var(--font-head);font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);margin-top:12px}
 @media (max-width:560px){
   .job-grid{grid-template-columns:1fr 1fr;gap:10px}
-  .job .ph img{aspect-ratio:3/4}
   .job figcaption{font-size:.68rem;margin-top:8px}
 }
 
