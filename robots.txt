@@ -17,4 +17,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://dealerplateguy.github.io/finish-line-home-repair/sitemap.xml
+Sitemap: https://finishlinehomerepair.com/sitemap.xml
